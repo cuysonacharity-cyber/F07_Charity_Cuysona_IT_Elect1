@@ -10,9 +10,8 @@ import {
 
 export default function MidtermAct01() {
   const [messages, setMessages] = useState([
-    { id: "1", text: "Hi mahal koooo!  ", sender: "other" },
-    { id: "2", text: "Hello lovee, how are you?", sender: "me" },
-    { id: "3", text: "I'm fine bebe, imissyouu", sender: "other" },
+    { id: "1", text: "Hi", sender: "other" },
+    { id: "2", text: "Hello", sender: "me" },
   ]);
   const [comments, setComments] = useState([]);
   const [input, setInput] = useState("");
@@ -33,7 +32,7 @@ export default function MidtermAct01() {
     setTimeout(() => {
       const botReply = {
         id: (Date.now() + 1).toString(),
-        text: "iloveyouuuu",
+        text: "Okay",
         sender: "other",
       };
       setMessages((prev) => [...prev, botReply]);
